@@ -44,10 +44,16 @@
 
 .section{
     height: 400px;
+    margin: 4rem;
+    
 }
 
 .supersection{
     height: 800px;
+}
+
+.jf-sb{
+    justify-content: space-between;
 }
 
 /* #endregion assets */
@@ -250,19 +256,46 @@ padding: 20px;
 
 /* #region main */
 
+#art2{
+    
+}
+
+.reverse{
+    background-color: var(--bg-section-two);
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
 .articles{
     height: 90%;
     display: flex;
 }
 
 .artprimary{
-    width: 60%;
+    flex-grow: 3;
     height: 100%;
 }
 
+.artprimary>img{
+    max-height: 100%;
+}
+
 .artsecondary {
-    width: 40%;
+    flex-grow: 2;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.artsecondary>h2{
+    font-size: 40px;
+}
+
+.artsecondary>p{
+    font-size: 1.3rem;
 }
 
 /* #endregion main */
