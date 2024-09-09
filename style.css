@@ -141,9 +141,11 @@
 /* #region header */
 
 .title{
-height: 45px;
 position: sticky;
 top: 0;
+background-color: var(--bg-header);
+color: white;
+padding: 20px;
 
 }
 
@@ -172,8 +174,19 @@ top: 0;
 }
 
 .title-links>a{
-    color: black;
+    color: white;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.title-login>button{
+    background-color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 10px;
+    border: 1px solid white;
+    cursor: pointer;
 }
 
 /* #endregion debug */
