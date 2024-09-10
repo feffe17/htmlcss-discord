@@ -484,7 +484,6 @@ footer{background-color: var(--debug-bg-footer);}
   .footer-list{
     color: white;
     list-style: none;
-    cursor: pointer;
     display: flex;
     flex-flow: column wrap;
   }
@@ -493,7 +492,12 @@ footer{background-color: var(--debug-bg-footer);}
     padding: 0.5rem;
   }
 
-  .footer-list li:first-child{
+  .footer-list li a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .footer-list li:first-child >a{
     color: var(--text-footer);
   }
 /* #endregion footer */
