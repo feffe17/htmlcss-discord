@@ -152,13 +152,18 @@ body{
 
 /* #region header */
 
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
 .title{
-position: sticky;
-top: 0;
-left: 0;
-background-color: var(--bg-header);
-color: white;
-padding: 20px;
+
+    background-color: var(--bg-header);
+    color: white;
+    padding: 20px;
 
 }
 
